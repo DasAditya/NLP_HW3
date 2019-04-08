@@ -1,0 +1,14 @@
+The execution time for Q5 was under 20 secs on my machine.
+After running the eval_parser3 on the prediction file of Q5, I got an F1 score of 71.4
+I found the precision and F1 score of VP and NP to be on the lower side. Maybe this was due to the train corpus.
+
+
+The execution time for Q6 was under 30 secs on my machine
+After running the eval_parser3 on the prediction file of Q6, I got an F1 score of 74.2
+With vertical markovization, the set of non terminals increased a lot, but however, the dynamic programming
+and back pointers helped greatly in the execution of the program in a reasonable amount of time.
+Also, a use of Dictionary in python helped a lot in execution time.
+The precision and F1 score of VP and NP also increased compared to Q5, so we can say that
+vertical markovization helped the parser.
+Almost all performance improved as compared to Q5, but however, the performance for
+NP+ADJ decreased.
